@@ -27,6 +27,7 @@
     "dependencies": {
         "moment": "^2.29.1",
         "vue-router": "^3.5.1",
+        "vue-simple-spinner": "^1.2.10",
         "vuejs-datepicker": "^1.6.2"
     }
 }
