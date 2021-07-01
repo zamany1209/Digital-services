@@ -8,6 +8,13 @@
 
                     <div class="card-body">
                         <form v-on:submit.prevent="onSubmit">
+                            <div class="alert alert-danger" v-if="errors.length">
+                                <ui>
+                                    <li v-for="(error, index) in errors" :key="index">
+                                        {{ error }}
+                                    </li>
+                                </ui>
+                            </div>
                             <input type="hidden" name="_token" value="w7PkgB9kyqPHvaszIj56FmnLLoTnjOfShHooKzD1">
                             <div class="form-group row">
                                 <label for="email" class="col-md-4 col-form-label text-md-right">E-Mail Address</label>

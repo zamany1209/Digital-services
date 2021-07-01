@@ -1984,6 +1984,13 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//
+//
+//
+//
+//
+//
+//
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ({
   name: "login",
   props: ['app'],
@@ -38192,6 +38199,29 @@ var render = function() {
                   }
                 },
                 [
+                  _vm.errors.length
+                    ? _c(
+                        "div",
+                        { staticClass: "alert alert-danger" },
+                        [
+                          _c(
+                            "ui",
+                            _vm._l(_vm.errors, function(error, index) {
+                              return _c("li", { key: index }, [
+                                _vm._v(
+                                  "\r\n                                        " +
+                                    _vm._s(error) +
+                                    "\r\n                                    "
+                                )
+                              ])
+                            }),
+                            0
+                          )
+                        ],
+                        1
+                      )
+                    : _vm._e(),
+                  _vm._v(" "),
                   _c("input", {
                     attrs: {
                       type: "hidden",
@@ -38395,11 +38425,25 @@ var render = function() {
           },
           [
             _c("ul", { staticClass: "navbar-nav me-auto mb-2 mb-lg-0" }, [
+              _c(
+                "li",
+                { staticClass: "nav-item" },
+                [
+                  _c(
+                    "router-link",
+                    {
+                      staticClass: "nav-link active",
+                      attrs: { to: "/", "aria-current": "page" }
+                    },
+                    [_vm._v("Home")]
+                  )
+                ],
+                1
+              ),
+              _vm._v(" "),
               _vm._m(1),
               _vm._v(" "),
               _vm._m(2),
-              _vm._v(" "),
-              _vm._m(3),
               _vm._v(" "),
               _c("li", { staticClass: "nav-item dropdown" }, [
                 _c(
@@ -38467,13 +38511,13 @@ var render = function() {
                           )
                         ]),
                     _vm._v(" "),
-                    _vm._m(4)
+                    _vm._m(3)
                   ]
                 )
               ])
             ]),
             _vm._v(" "),
-            _vm._m(5)
+            _vm._m(4)
           ]
         )
       ])
@@ -38500,21 +38544,6 @@ var staticRenderFns = [
       },
       [_c("span", { staticClass: "navbar-toggler-icon" })]
     )
-  },
-  function() {
-    var _vm = this
-    var _h = _vm.$createElement
-    var _c = _vm._self._c || _h
-    return _c("li", { staticClass: "nav-item" }, [
-      _c(
-        "a",
-        {
-          staticClass: "nav-link active",
-          attrs: { "aria-current": "page", href: "#" }
-        },
-        [_vm._v("Home")]
-      )
-    ])
   },
   function() {
     var _vm = this
