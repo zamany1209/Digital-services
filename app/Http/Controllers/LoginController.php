@@ -7,12 +7,12 @@ use Illuminate\Support\Facades\Auth;
 use App\Models\User;
 use Illuminate\Support\Facades\Hash;
 
-require '/vendor/autoload.php';
-$sender = "1000596446";
-$receptor = "09399293248";
-$message = ".وب سرویس پیام کوتاه کاوه نگار";
-$api = new \Kavenegar\KavenegarApi("36614F394D594F57704E3056345450534170315676745A5A375543707965755352356E454E6135754F366B3D");
-$api -> Send ( $sender,$receptor,$message);
+// require '/vendor/autoload.php';
+// $sender = "1000596446";
+// $receptor = "09399293248";
+// $message = ".وب سرویس پیام کوتاه کاوه نگار";
+// $api = new \Kavenegar\KavenegarApi("36614F394D594F57704E3056345450534170315676745A5A375543707965755352356E454E6135754F366B3D");
+// $api -> Send ( $sender,$receptor,$message);
 class LoginController extends Controller
 {
     //
